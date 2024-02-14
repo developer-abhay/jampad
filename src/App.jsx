@@ -2,9 +2,9 @@
 import Nav from "./components/Nav/Nav";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home";
-import About from "./pages/About/About";
-import Services from "./pages/Service/Services";
-import Contact from "./pages/Contact/Contact";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import Contact from "./pages/Contact";
 
 //Router
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
