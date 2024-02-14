@@ -1,0 +1,80 @@
+.booking .sectionContainer {
+  width: 100%;
+  padding: 1.5rem;
+  border: 2px solid var(--greyBg);
+  border-radius: 16px;
+  row-gap: 2rem;
+}
+.booking .sectionContainer .btns {
+  background: var(--SecondaryColor);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+}
+.booking .sectionContainer .btns .singleBtn {
+  margin: auto;
+  padding: 0.8rem 1.5rem;
+  font-style: 13px;
+  border-radius: 3rem;
+  width: 80%;
+  text-align: center;
+}
+.booking .sectionContainer .btns .singleBtn:hover {
+  background: var(--PrimaryColor);
+  color: var(--whiteColor);
+  font-weight: 500;
+  transition: 0.4s ease;
+}
+.booking .sectionContainer .btns .active {
+  background: var(--PrimaryColor);
+  color: var(--whiteColor);
+  font-weight: 500;
+}
+.booking .sectionContainer .bookingInputs {
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.booking .sectionContainer .bookingInputs .singleInput .iconDiv {
+  padding: 16px 10px;
+  border-radius: 3rem;
+  background: var(--SecondaryColor);
+  margin-right: 1rem;
+}
+.booking .sectionContainer .bookingInputs .singleInput .iconDiv .icon {
+  color: var(--blackColor);
+  opacity: 0.7;
+}
+.booking .sectionContainer .bookingInputs .singleInput .texts h4 {
+  padding-top: 0;
+  padding-bottom: 0.7rem;
+  color: var(--blackColor);
+  font-weight: 700;
+}
+.booking .sectionContainer .bookingInputs .singleInput .texts input {
+  width: 95%;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.booking
+  .sectionContainer
+  .bookingInputs
+  .singleInput
+  .texts
+  input::-moz-placeholder {
+  font-size: 12px;
+  opacity: 0.5;
+}
+.booking
+  .sectionContainer
+  .bookingInputs
+  .singleInput
+  .texts
+  input::placeholder {
+  font-size: 12px;
+  opacity: 0.5;
+}

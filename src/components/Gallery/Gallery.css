@@ -1,0 +1,51 @@
+.gallery {
+  margin: 0rem;
+  padding: 3rem 2rem;
+  width: 99vw;
+  overscroll-behavior-inline: contain;
+  background-color: rgb(228, 228, 228);
+  text-align: center;
+}
+
+.gallery > h1 {
+  font-size: 44px;
+  margin-bottom: 10px;
+}
+
+.gallery-track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 44vmin;
+  gap: 2rem;
+  overflow: scroll;
+
+  padding: 10px 0px;
+  width: 100%;
+}
+
+.gallery-track::-webkit-scrollbar {
+  width: 0px;
+  height: 12px;
+}
+
+.gallery-track::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background-color: rgb(188, 188, 255);
+}
+.gallery-track::-webkit-scrollbar-track {
+  border-radius: 100px;
+  background-color: white;
+}
+
+.gallery-track > .img-container:hover {
+  -webkit-box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.5);
+  scale: 1.05;
+}
+.gallery-track > .img-container > img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
