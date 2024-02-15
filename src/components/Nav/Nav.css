@@ -49,19 +49,21 @@
   display: none;
 }
 
-button {
+.nav-menu > a {
   padding: 0.5rem 1rem;
   white-space: nowrap;
   border-radius: 0.3rem;
   font-size: 1rem;
   font-weight: 600;
-  border: none;
+  background-color: rgb(225, 225, 225);
   cursor: pointer;
+  color: black;
 }
-button:hover {
+.nav-menu > a:hover {
   background-color: #151516;
   color: #fff;
 }
+
 .hamburger {
   display: none;
 }
@@ -129,5 +131,26 @@ button:hover {
   .hamburger > .icon {
     font-size: 1.4rem;
     color: #222;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .nav {
+    height: 60px;
+  }
+  .nav-logo > img {
+    width: 150px;
+    margin-top: 8px;
+  }
+  .nav-menu {
+    padding-top: 60px;
+  }
+  .nav-links {
+    font-size: 1.1rem;
+    padding: 1rem 0;
+  }
+  .nav-btn {
+    padding: 1.2rem;
+    font-size: 1.1rem;
   }
 }

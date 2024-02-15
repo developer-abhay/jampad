@@ -1,80 +1,78 @@
 .booking .sectionContainer {
-  width: 100%;
+  width: 90%;
+  margin: auto;
   padding: 1.5rem;
   border: 2px solid var(--greyBg);
   border-radius: 16px;
-  row-gap: 2rem;
+  position: absolute;
+  top: 65vh;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
 }
-.booking .sectionContainer .btns {
-  background: var(--SecondaryColor);
-  padding: 0.5rem;
-  border-radius: 1rem;
-  flex-direction: column;
+
+.bookingInputs {
+  display: flex;
   width: 100%;
-  margin: auto;
-}
-.booking .sectionContainer .btns .singleBtn {
-  margin: auto;
-  padding: 0.8rem 1.5rem;
-  font-style: 13px;
-  border-radius: 3rem;
-  width: 80%;
-  text-align: center;
-}
-.booking .sectionContainer .btns .singleBtn:hover {
-  background: var(--PrimaryColor);
-  color: var(--whiteColor);
-  font-weight: 500;
-  transition: 0.4s ease;
-}
-.booking .sectionContainer .btns .active {
-  background: var(--PrimaryColor);
-  color: var(--whiteColor);
-  font-weight: 500;
-}
-.booking .sectionContainer .bookingInputs {
-  width: 100%;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-between;
   gap: 1.5rem;
 }
-.booking .sectionContainer .bookingInputs .singleInput .iconDiv {
+.singleInput {
+  width: 18%;
+}
+
+.bookingInputs .singleInput .iconDiv {
   padding: 16px 10px;
   border-radius: 3rem;
   background: var(--SecondaryColor);
   margin-right: 1rem;
 }
-.booking .sectionContainer .bookingInputs .singleInput .iconDiv .icon {
+
+.singleInput .iconDiv .icon {
   color: var(--blackColor);
   opacity: 0.7;
 }
-.booking .sectionContainer .bookingInputs .singleInput .texts h4 {
+
+.singleInput .texts {
+  width: 60%;
+}
+.singleInput .texts h4 {
   padding-top: 0;
-  padding-bottom: 0.7rem;
+  padding-bottom: 0.3rem;
   color: var(--blackColor);
   font-weight: 700;
 }
-.booking .sectionContainer .bookingInputs .singleInput .texts input {
+.singleInput .texts input,
+.singleInput .texts select {
   width: 95%;
-  border: none;
+  padding: 0px 5px;
+  font-size: 14px;
+  border: 2px solid rgb(200, 200, 200);
   outline: none;
   background: transparent;
 }
-.booking
-  .sectionContainer
-  .bookingInputs
-  .singleInput
-  .texts
-  input::-moz-placeholder {
+.bookingInputs .singleInput .texts input::-moz-placeholder {
   font-size: 12px;
   opacity: 0.5;
 }
-.booking
-  .sectionContainer
-  .bookingInputs
-  .singleInput
-  .texts
-  input::placeholder {
+.bookingInputs .singleInput .texts input::placeholder {
   font-size: 12px;
   opacity: 0.5;
+}
+.bookingInputs > .btn {
+  display: block;
+  text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+  .booking .sectionContainer {
+    margin-top: -20px;
+  }
+
+  .bookingInputs {
+    gap: 1rem;
+  }
+  .bookingInputs .singleInput .texts h4 {
+    padding-bottom: 0rem;
+  }
 }

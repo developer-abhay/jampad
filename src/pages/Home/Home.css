@@ -1,26 +1,54 @@
-.home {
-  padding-top: 10rem;
+.videoContainer {
+  padding: 5rem;
   text-align: center;
   gap: 2rem;
-  flex-direction: column;
+  display: flex;
+  text-align: left;
 }
-.home .mainText {
+.mainText {
+  padding-left: 5rem;
+  width: 40%;
   color: var(--blackColor);
   font-weight: 700;
   font-size: 15px;
   line-height: 2.5rem;
 }
-.home .homeImages {
-  width: 100%;
-  margin: 1rem auto 0;
-  justify-content: center;
-  align-items: center;
+
+.mainText h1 {
+  font-size: 32px;
+  margin-bottom: 2rem;
+}
+.mainText p {
+  width: 95%;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 1rem 0;
+}
+
+.videoDiv {
+  width: 60%;
+  margin: 0.5rem auto 0;
   position: relative;
-  border-radius: 5rem;
 }
-.home .homeImages .videoDiv {
-  width: 100%;
-}
-.home .homeImages .videoDiv .video {
+
+.videoDiv .video {
   border-radius: 10rem;
+}
+
+@media screen and (max-width: 450px) {
+  .videoContainer {
+    padding: 2rem 0;
+    gap: 1rem;
+  }
+  .videoContainer .mainText {
+    line-height: 2rem;
+  }
+  .videoContainer .mainText > p {
+    padding: 1rem 0rem;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .videoContainer .homeImages {
+    margin: 0;
+  }
 }

@@ -9,7 +9,7 @@ const ServiceData = () => {
   return (
     <div className="service">
       <h1>Our Services</h1>
-      <p>Lorem ipsum dolor sit amet.</p>
+
       <ServiceItem
         cName="first-service"
         title="Music Academy"
@@ -26,8 +26,8 @@ const ServiceData = () => {
         img2={ServiceImg2}
       />
       <ServiceItem
-        cName="Jampad & Studios"
-        title="Hello Vello Volcano, Batangas"
+        cName="first-service-reverse"
+        title="Jampad & Studios"
         text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
           repellendus quae obcaecati sequi tempore deleniti, qui similique amet
           minus voluptatum ex dolores praesentium ipsa autem, nobis libero

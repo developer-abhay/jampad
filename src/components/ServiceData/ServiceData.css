@@ -8,14 +8,14 @@
 
 .first-service {
   display: flex;
-  align-items: center;
+  flex-direction: row-reverse;
+  align-items: start;
   justify-content: space-between;
   margin-top: 4.5rem;
 }
 .first-service-reverse {
   display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
   margin-top: 4.5rem;
 }
@@ -75,5 +75,32 @@
   }
   .images img {
     height: 250px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .service {
+    margin: 2rem 1.2rem;
+    text-align: center;
+  }
+  .service > h1 {
+    font-size: 24px;
+  }
+  .first-service {
+    margin-top: 1rem;
+  }
+  .service-text {
+    text-align: left;
+  }
+  .service-text h2 {
+    padding-bottom: 0.5rem;
+    font-size: 20px;
+  }
+
+  .images {
+    margin-bottom: 0px;
+  }
+  .images img {
+    height: 150px;
   }
 }

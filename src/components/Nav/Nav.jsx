@@ -10,8 +10,8 @@ import { RxCross1 } from "react-icons/rx";
 const Nav = () => {
   //   Function to expand and close the nav menu in smaller devices
   const [clicked, setClicked] = useState(false);
+  const navMenu = document.querySelector(".nav-menu");
   const showMenu = () => {
-    const navMenu = document.querySelector(".nav-menu");
     navMenu.classList.toggle("active");
     if (clicked) {
       setClicked(false);
@@ -34,14 +34,13 @@ const Nav = () => {
       <ul className="nav-menu">
         {NavItems.map(({ title, url, classN }) => {
           return (
-            <li key={title}>
+            <li key={title} onClick={showMenu}>
               <Link to={url} className={classN}>
                 {title}
               </Link>
             </li>
           );
         })}
-        <button>Sign Up</button>
       </ul>
     </nav>
   );

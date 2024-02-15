@@ -9,8 +9,7 @@ const Footer = () => {
     <footer>
       <div className="top">
         <div>
-          <h1>Jampad and Studios</h1>
-          <p>Choose something</p>
+          <h3>Rhythmicstan - Jampad and Studios</h3>
         </div>
         <div>
           <a href="/">
@@ -27,36 +26,8 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="bottom">
-        <div>
-          <h4>Projects</h4>
-          <a href="/">Changelog</a>
-          <a href="/">Changelog</a>
-          <a href="/">Changelog</a>
-          <a href="/">Changelog</a>
-        </div>
-        <div>
-          <h4>Projects</h4>
-          <a href="/">Changelog</a>
-          <a href="/">Changelog</a>
-          <a href="/">Changelog</a>
-          <a href="/">Changelog</a>
-        </div>
-        <div>
-          <h4>Projects</h4>
-          <a href="/">Changelog</a>
-          <a href="/">Changelog</a>
-          <a href="/">Changelog</a>
-          <a href="/">Changelog</a>
-        </div>
-        <div>
-          <h4>Projects</h4>
-          <a href="/">Changelog</a>
-          <a href="/">Changelog</a>
-          <a href="/">Changelog</a>
-          <a href="/">Changelog</a>
-        </div>
-      </div>
+      <hr />
+      <p>COPYRIGHT © 2024 Rhythmicstan Music Academy</p>
     </footer>
   );
 };

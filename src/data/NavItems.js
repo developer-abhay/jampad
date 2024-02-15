@@ -23,10 +23,4 @@ export const NavItems = [
     Icon: "MdPermContactCalendar",
     classN: "nav-links",
   },
-  {
-    title: "SignUp",
-    url: "/signup",
-    classN: "nav-btn",
-    Icon: "MdPermContactCalendar",
-  },
 ];

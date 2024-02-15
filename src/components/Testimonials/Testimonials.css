@@ -1,12 +1,17 @@
-.testimonials .sectionContainer {
+.testimonials {
   text-align: center;
+  padding: 0 !important;
+  padding-bottom: 3rem !important;
+  margin-top: -5rem;
 }
-.testimonials .sectionContainer .testimonialsContainer {
+.testimonialsContainer {
+  margin: auto;
   margin-top: 1.5rem;
   gap: 1.5rem;
-  display: flex;
+  display: flex !important;
+  width: 90%;
 }
-.testimonials .sectionContainer .testimonialsContainer .singletestimonial {
+.singletestimonial {
   position: relative;
   height: 280px;
   width: 85%;
@@ -16,28 +21,12 @@
   gap: 1rem;
   margin: auto;
 }
-.testimonials
-  .sectionContainer
-  .testimonialsContainer
-  .singletestimonial
-  .jampadImage,
-.testimonials
-  .sectionContainer
-  .testimonialsContainer
-  .singletestimonial
-  .testimonialImage,
-.testimonials
-  .sectionContainer
-  .testimonialsContainer
-  .singletestimonial
-  .testimonialName {
+.singletestimonial .jampadImage,
+.singletestimonial .testimonialImage,
+.singletestimonial .testimonialName {
   position: absolute;
 }
-.testimonials
-  .sectionContainer
-  .testimonialsContainer
-  .singletestimonial
-  .jampadImage {
+.singletestimonial .jampadImage {
   height: 100%;
   width: 100%;
   top: 0;
@@ -47,11 +36,7 @@
   -o-object-fit: cover;
   object-fit: cover;
 }
-.testimonials
-  .sectionContainer
-  .testimonialsContainer
-  .singletestimonial
-  .testimonialImage {
+.singletestimonial .testimonialImage {
   height: 50px;
   width: 50px;
   -o-object-fit: cover;
@@ -76,11 +61,7 @@
     transform: translateY(0px);
   }
 }
-.testimonials
-  .sectionContainer
-  .testimonialsContainer
-  .singletestimonial
-  .testimonialName {
+.singletestimonial .testimonialName {
   bottom: -100%;
   width: 100%;
   height: -moz-max-content;
@@ -90,22 +71,12 @@
   transition: var(--transition);
   animation: animatedBorders 2.3s infinite;
 }
-.testimonials
-  .sectionContainer
-  .testimonialsContainer
-  .singletestimonial
-  .testimonialName
-  span {
+.singletestimonial .testimonialName span {
   display: block;
   color: black;
   font-weight: 700;
 }
-.testimonials
-  .sectionContainer
-  .testimonialsContainer
-  .singletestimonial
-  .testimonialName
-  p {
+.singletestimonial .testimonialName p {
   color: var(--PrimaryColor);
   font-style: italic;
 }
@@ -120,19 +91,24 @@
     border-radius: 0rem;
   }
 }
-.testimonials
-  .sectionContainer
-  .testimonialsContainer
-  .singletestimonial:hover
-  .testimonialName {
+.singletestimonial:hover .testimonialName {
   bottom: 0;
   transition: 1s ease-in-out;
 }
-.testimonials
-  .sectionContainer
-  .testimonialsContainer
-  .singletestimonial:hover
-  .testimonialImage {
+.singletestimonial:hover .testimonialImage {
   bottom: 110px;
   transition: 1s ease-in-out;
+}
+
+@media screen and (max-width: 425px) {
+  .testimonials .sectionContainer > h2 {
+    font-size: 20px;
+    padding: 0px;
+    margin-top: -20px;
+  }
+  .testimonialsContainer {
+    margin-top: 1.5rem;
+    gap: 1.5rem;
+    flex-direction: column;
+  }
 }

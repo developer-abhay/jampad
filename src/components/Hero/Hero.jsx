@@ -7,9 +7,6 @@ const Hero = ({ cName, img, title, text, url, btnClass, btnText }) => {
       <div className="hero-text">
         <h1>{title}</h1>
         <p>{text}</p>
-        <a href={url} className={btnClass}>
-          {btnText}
-        </a>
       </div>
     </div>
   );
