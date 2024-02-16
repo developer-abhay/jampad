@@ -24,6 +24,7 @@ const ServiceData = () => {
           sit temporibus quasi vitae a."
         img1={ServiceImg1}
         img2={ServiceImg2}
+        url="https://www.rhythmicstan.com/"
       />
       <ServiceItem
         cName="first-service-reverse"
@@ -39,6 +40,7 @@ const ServiceData = () => {
           sit temporibus quasi vitae a."
         img1={ServiceImg3}
         img2={ServiceImg4}
+        url="/"
       />
     </div>
   );

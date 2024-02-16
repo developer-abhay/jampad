@@ -14,8 +14,6 @@ Project Structure
 
 - React router dom
 - React Icons
-- Aos (animate on scroll)
-- Email.js
 
 3. Routes and components :
 
@@ -23,9 +21,9 @@ Project Structure
 - Banner
 - Footer
 - Home Page
-  a. Hero with a video and booking feature
-  b. Gallery with smooth scrolling animation
-  c. Info Section (Equipments details)
+  a. Hero with booking feature
+  b. Video Showcasing jamming session
+  b. Gallery - Info Section (Equipments details)
   d. Top Jammers
 - About Page
   a. Banner
@@ -37,3 +35,14 @@ Project Structure
 - Contact Page
   a. Banner
   b. Contact Form
+
+4. Functionality
+
+- Booking Feature
+- Contact Form
+- Animation on scroll
+
+Librabies Used
+
+- Aos (animate on scroll)
+- Email.js

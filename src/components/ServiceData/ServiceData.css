@@ -8,13 +8,13 @@
 
 .first-service {
   display: flex;
-  flex-direction: row-reverse;
   align-items: start;
   justify-content: space-between;
   margin-top: 4.5rem;
 }
 .first-service-reverse {
   display: flex;
+  flex-direction: row-reverse;
   align-items: start;
   justify-content: space-between;
   margin-top: 4.5rem;
@@ -28,6 +28,10 @@
 
 .service-text h2 {
   padding-bottom: 1rem;
+}
+
+.service-text button {
+  margin-top: 1rem;
 }
 
 .images {

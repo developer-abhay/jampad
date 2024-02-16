@@ -1,15 +1,28 @@
 .about-container {
-  margin: 4rem 6rem;
+  margin: 6rem;
   text-align: start;
 }
 
-.about-container h1 {
+.about-item {
+  display: flex;
+  margin-bottom: 4rem;
+  gap: 5%;
+}
+
+.about-item:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+.about-item h1 {
   padding-bottom: 1rem;
   font-size: 2rem;
 }
 
-.about-container p {
+.about-item p {
   padding-bottom: 2rem;
+}
+.about-item img {
+  border-radius: 50px;
 }
 
 @media screen and (max-width: 850px) {
