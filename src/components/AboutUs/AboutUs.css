@@ -4,13 +4,17 @@
 }
 
 .about-item {
-  display: flex;
+  display: grid;
+  grid-template-columns: 45% 45%;
+  gap: 10%;
   margin-bottom: 4rem;
-  gap: 5%;
 }
 
 .about-item:nth-child(2) {
-  flex-direction: row-reverse;
+  direction: rtl;
+}
+.about-item:nth-child(2) > div {
+  text-align: left;
 }
 
 .about-item h1 {
@@ -20,9 +24,12 @@
 
 .about-item p {
   padding-bottom: 2rem;
+  font-size: 14px;
 }
 .about-item img {
   border-radius: 50px;
+  max-height: 350px;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 850px) {

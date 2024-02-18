@@ -1,5 +1,5 @@
 import Hero from "../components/Hero/Hero";
-import ContactBanner from "/assets/demo.jpeg";
+import ContactBanner from "../../public/assets/banner_contact.jpg";
 import ContactForm from "../components/ContactForm/ContactForm";
 
 const Contact = () => {

@@ -3,9 +3,6 @@ import { Tb24Hours } from "react-icons/tb";
 import { IoTimeOutline } from "react-icons/io5";
 import { RxCalendar } from "react-icons/rx";
 import "./BookingFeature.css";
-//Emailjs
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
 //Calender
 import { useState } from "react";
 import DatePicker from "react-datepicker";
@@ -14,41 +11,10 @@ import "react-datepicker/dist/react-datepicker.css";
 const BookingFeature = () => {
   const [startDate, setStartDate] = useState(new Date());
 
-  //EmailJS
-  const booking = useRef();
-
-  const sendBooking = (e) => {
-    e.preventDefault();
-
-    const bookingForm = document.querySelector("#booking-form");
-
-    emailjs
-      .sendForm(
-        "jampad_and_studios",
-        "booking_form",
-        booking.current,
-        "kTvhuWO_TJBurp48r"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    bookingForm.reset();
-  };
-
   return (
     <div className="booking container section" id="bookNow">
       <div className="sectionContainer grid">
-        <form
-          className="bookingInputs flex"
-          id="booking-form"
-          ref={booking}
-          onSubmit={sendBooking}
-        >
+        <form className="bookingInputs flex" id="booking-form">
           {/* Single Input */}
           <div className="singleInput flex">
             <div className="iconDiv">
@@ -122,9 +88,9 @@ const BookingFeature = () => {
             </div>
           </div>
 
-          <button type="submit" value="send" className="btn btnBlock flex">
+          <a value="send" className="btn btnBlock flex">
             Book Jampad
-          </button>
+          </a>
         </form>
       </div>
     </div>

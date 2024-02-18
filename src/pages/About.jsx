@@ -1,6 +1,6 @@
 import Hero from "../components/Hero/Hero";
 import AboutUs from "../components/AboutUs/AboutUs";
-import AboutBanner from "/assets/jampad1.jpg";
+import AboutBanner from "../../public/assets/banner_about.jpg";
 
 const About = () => {
   return (

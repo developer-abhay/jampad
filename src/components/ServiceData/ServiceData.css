@@ -6,18 +6,16 @@
   font-size: 3rem;
 }
 
-.first-service {
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
-  margin-top: 4.5rem;
-}
+.first-service,
 .first-service-reverse {
   display: flex;
-  flex-direction: row-reverse;
   align-items: start;
   justify-content: space-between;
-  margin-top: 4.5rem;
+  margin: 4.5rem 0rem;
+}
+.first-service-reverse {
+  flex-direction: row-reverse;
+  margin-top: 10rem;
 }
 
 .service-text {

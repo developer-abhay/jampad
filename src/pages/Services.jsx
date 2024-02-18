@@ -1,5 +1,5 @@
 import Hero from "../components/Hero/Hero";
-import ServiceBanner from "/assets/demo.jpeg";
+import ServiceBanner from "../../public/assets/banner_service.jpg";
 import ServiceData from "../components/ServiceData/ServiceData";
 
 const Services = () => {
