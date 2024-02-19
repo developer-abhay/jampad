@@ -2,6 +2,7 @@ import testimonial1 from "../../../public/assets/testi1.jpg";
 import testimonial2 from "../../../public/assets/testi2.jpg";
 import testimonial3 from "../../../public/assets/testi3.jpg";
 import testimonial4 from "../../../public/assets/testi4.jpg";
+import { FaStar } from "react-icons/fa";
 import "./Testimonials.css";
 
 const Testimonials = () => {
@@ -15,12 +16,15 @@ const Testimonials = () => {
           <div className="singletestimonial">
             <img className="jampadImage" src={testimonial1} alt="" />
             <div className="testimonialDetails">
-              <div className="testimonialPicture">
-                <img src={testimonial1} className="testimonialImage" />
-              </div>
               <div className="testimonialName">
-                <span>09 Studio</span>
-                <p> @09studios00</p>
+                <span>The Influence Project</span>
+                <div>
+                  <FaStar className="icon" />
+                  <FaStar className="icon" />
+                  <FaStar className="icon" />
+                  <FaStar className="icon" />
+                  <FaStar className="icon" />
+                </div>
               </div>
             </div>
           </div>
@@ -28,12 +32,15 @@ const Testimonials = () => {
           <div className="singletestimonial">
             <img className="jampadImage" src={testimonial1} alt="" />
             <div className="testimonialDetails">
-              <div className="testimonialPicture">
-                <img src={testimonial1} className="testimonialImage" />
-              </div>
               <div className="testimonialName">
-                <span>09 Studio</span>
-                <p> @09studios00</p>
+                <span>Shiv Live</span>
+                <div>
+                  <FaStar className="icon" />
+                  <FaStar className="icon" />
+                  <FaStar className="icon" />
+                  <FaStar className="icon" />
+                  <FaStar className="icon" />
+                </div>
               </div>
             </div>
           </div>
@@ -41,12 +48,15 @@ const Testimonials = () => {
           <div className="singletestimonial">
             <img className="jampadImage" src={testimonial1} alt="" />
             <div className="testimonialDetails">
-              <div className="testimonialPicture">
-                <img src={testimonial1} className="testimonialImage" />
-              </div>
               <div className="testimonialName">
-                <span>09 Studio</span>
-                <p> @09studios00</p>
+                <span>Tejasva</span>
+                <div>
+                  <FaStar className="icon" />
+                  <FaStar className="icon" />
+                  <FaStar className="icon" />
+                  <FaStar className="icon" />
+                  <FaStar className="icon" />
+                </div>
               </div>
             </div>
           </div>
@@ -54,12 +64,15 @@ const Testimonials = () => {
           <div className="singletestimonial">
             <img className="jampadImage" src={testimonial1} alt="" />
             <div className="testimonialDetails">
-              <div className="testimonialPicture">
-                <img src={testimonial1} className="testimonialImage" />
-              </div>
               <div className="testimonialName">
-                <span>09 Studio</span>
-                <p> @09studios00</p>
+                <span>AIIMS RDA</span>
+                <div>
+                  <FaStar className="icon" />
+                  <FaStar className="icon" />
+                  <FaStar className="icon" />
+                  <FaStar className="icon" />
+                  <FaStar className="icon" />
+                </div>
               </div>
             </div>
           </div>

@@ -22,10 +22,14 @@
   margin: auto;
 }
 .singletestimonial .jampadImage,
-.singletestimonial .testimonialImage,
 .singletestimonial .testimonialName {
   position: absolute;
 }
+
+.testimonialName > div > .icon {
+  color: rgb(233, 175, 29);
+}
+
 .singletestimonial .jampadImage {
   height: 100%;
   width: 100%;
@@ -35,19 +39,6 @@
   bottom: 0;
   -o-object-fit: cover;
   object-fit: cover;
-}
-.singletestimonial .testimonialImage {
-  height: 50px;
-  width: 50px;
-  -o-object-fit: cover;
-  object-fit: cover;
-  border-radius: 50%;
-  bottom: 30px;
-  left: 40%;
-  transform: translateX(-50%);
-  border: 5px solid rgba(225, 225, 225, 0.637);
-  transition: var(--transition);
-  animation: animated 2.3s infinite;
 }
 
 @keyframes animated {
@@ -62,11 +53,11 @@
   }
 }
 .singletestimonial .testimonialName {
-  bottom: -100%;
+  bottom: 0;
   width: 100%;
   height: -moz-max-content;
   height: max-content;
-  background: var(--whiteColor);
+  background: rgba(95, 202, 255, 0.788);
   padding: 1.5rem 1rem;
   transition: var(--transition);
   animation: animatedBorders 2.3s infinite;
@@ -90,14 +81,6 @@
   100% {
     border-radius: 0rem;
   }
-}
-.singletestimonial:hover .testimonialName {
-  bottom: 0;
-  transition: 1s ease-in-out;
-}
-.singletestimonial:hover .testimonialImage {
-  bottom: 110px;
-  transition: 1s ease-in-out;
 }
 
 @media screen and (max-width: 425px) {
